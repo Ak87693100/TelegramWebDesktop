@@ -1,6 +1,5 @@
 package com.example.telegramwebdesktop;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.content.Intent;
@@ -13,11 +12,12 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import androidx.fragment.app.FragmentActivity;
 import androidx.biometric.BiometricPrompt;
 import androidx.biometric.BiometricManager;
 import androidx.core.content.ContextCompat;
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
     private WebView web;
     private SharedPreferences prefs;
     private boolean authenticated = false;
